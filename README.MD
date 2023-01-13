@@ -4,66 +4,50 @@
 npm install && npm start
 ```
 
-#### Database Connection
+# NodeJS + ExpressJS + MongoDB CRUD API
+[Demo Link] https://jobsapi.herokuapp.com/api/v1/
 
-1. Import connect.js
-2. Invoke in start()
-3. Setup .env in the root
-4. Add MONGO_URI with correct value
+Use Postman or Thunder Client  for access this API
 
-#### Routers
+# Registration
 
-- auth.js
-- jobs.js
+https://jobsapi.herokuapp.com/api/v1/registration/
 
-#### User Model
+JSON ---> {
+    "name":"Jhon","email":"jhon@gmail.com","password":"jhon1234"
+}
 
-Email Validation Regex
+# Login
 
-```regex
-/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-```
+https://jobsapi.herokuapp.com/api/v1/login/
 
-#### Register User
+JSON ---> {
+    "email":"jhon@gmail.com","password":"jhon1234"
+}
 
-- Validate - name, email, password - with Mongoose
-- Hash Password (with bcryptjs)
-- Save User
-- Generate Token
-- Send Response with Token
+# Create Job
 
-#### Login User
+https://jobsapi.herokuapp.com/api/v1/jobs/
 
-- Validate - email, password - in controller
-- If email or password is missing, throw BadRequestError
-- Find User
-- Compare Passwords
-- If no user or password does not match, throw UnauthenticatedError
-- If correct, generate Token
-- Send Response with Token
+JSON ---> {
+    "company":"Google","position":"Software Engineer Intern"
+}
 
-#### Mongoose Errors
+# View All Jobs
 
-- Validation Errors
-- Duplicate (Email)
-- Cast Error
+https://jobsapi.herokuapp.com/api/v1/jobs/
 
-#### Security
+# Update Job
+https://jobsapi.herokuapp.com/api/v1/jobs/
 
-- helmet
-- cors
-- xss-clean
-- express-rate-limit
+JSON ---> {
+    "company":"Facbook","position":"Software Engineer Intern"
+}
 
-Swagger UI
 
-```yaml
-/jobs/{id}:
-  parameters:
-    - in: path
-      name: id
-      schema:
-        type: string
-      required: true
-      description: the job id
-```
+# Delete Job
+https://jobsapi.herokuapp.com/api/v1/id
+<hr>
+ Please provide Bearer Token for Authentication process 
+
+
