@@ -8,7 +8,7 @@ npm install && npm start
 [Demo Link] https://jobsapi.herokuapp.com/
 
 Use Postman or Thunder Client  for access this API
-
+## Examples 
 # Registration
 
 https://jobsapi.herokuapp.com/api/v1/registration/
