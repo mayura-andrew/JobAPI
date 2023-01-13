@@ -5,7 +5,7 @@ npm install && npm start
 ```
 
 # NodeJS + ExpressJS + MongoDB CRUD API
-[Demo Link] https://jobsapi.herokuapp.com/api/v1/
+[Demo Link] https://jobsapi.herokuapp.com/
 
 Use Postman or Thunder Client  for access this API
 
