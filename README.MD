@@ -14,7 +14,7 @@ Use Postman or Thunder Client  for access this API
 https://jobsapi.herokuapp.com/api/v1/registration/
 
 JSON ---> {
-    "name":"Jhon","email":"jhon@gmail.com","password":"jhon1234"
+    "name":"John","email":"john@gmail.com","password":"john1234"
 }
 
 # Login
