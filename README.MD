@@ -48,6 +48,7 @@ JSON ---> {
 # Delete Job
 https://jobsapi.herokuapp.com/api/v1/id
 <hr>
- Please provide Bearer Token for Authentication process 
+ 
+ Must use Bearer Token for Authentication process 
 
 
